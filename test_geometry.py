@@ -4,7 +4,7 @@ import random
 import sys
 import os
 
-# Добавляем текущую директорию, чтобы Python видел circle.py, square.py и др.
+
 sys.path.append(os.path.dirname(__file__))
 
 from circle import area as circle_area, perimeter as circle_perimeter
@@ -13,9 +13,7 @@ from square import area as square_area, perimeter as square_perimeter
 from triangle import area as triangle_area, perimeter as triangle_perimeter
 
 
-# ===============================================================
-# 🟢 1. БАЗОВЫЕ ТЕСТЫ — проверка корректных значений
-# ===============================================================
+
 class TestCircle(unittest.TestCase):
     def test_area(self):
         """Проверка вычисления площади круга."""
@@ -64,9 +62,7 @@ class TestTriangle(unittest.TestCase):
         self.assertEqual(triangle_perimeter(0, 0, 0), 0)
 
 
-# ===============================================================
-# 🧪 2. ДОПОЛНИТЕЛЬНЫЕ ИНТЕРЕСНЫЕ ТЕСТЫ
-# ===============================================================
+
 class TestNegativeValues(unittest.TestCase):
     """Проверяем поведение функций при отрицательных длинах."""
 
@@ -130,8 +126,6 @@ class TestRelations(unittest.TestCase):
         self.assertEqual(square_perimeter(a), rectangle_perimeter(a, a))
 
 
-# ===============================================================
-# 🚀 Точка входа
-# ===============================================================
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)

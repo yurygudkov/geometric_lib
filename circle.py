@@ -2,7 +2,7 @@ import math
 
 
 def area(r):
-    '''принимается число r, возвращает pi*r^2(площадь круга hghfhfs;)'''
+    '''принимается число r, возвращает pi*r^2(площадь круга hghfhfs;jhdsvsdhji)'''
     return math.pi * r * r
 
 

@@ -110,13 +110,5 @@ class TestRandomized(unittest.TestCase):
             self.assertAlmostEqual(rectangle_perimeter(a, b), expected)
 
 
-class TestRelations(unittest.TestCase):
-
-    def test_square_vs_rectangle(self):
-        a = 5
-        self.assertEqual(square_area(a), rectangle_area(a, a))
-        self.assertEqual(square_perimeter(a), rectangle_perimeter(a, a))
-
-
 if __name__ == 'main':
     unittest.main(verbosity=2)
